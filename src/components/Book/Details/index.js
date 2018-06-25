@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Details extends Component {
     render() {
+        let person = this.props.person;
         return (
             <div id="details">
                 <h1>Details</h1>
@@ -11,13 +12,13 @@ class Details extends Component {
                             <span className="avatar">&#9787;</span>
                         </div>
                         <div className="col">
-                            <span className="name firstName">Ivan</span>
-                            <span className="name lastName">Ivanov</span>
+                            <span className="name firstName">{person.firstName}</span>
+                            <span className="name lastName">{person.lastName}</span>
                         </div>
                     </div>
                     <div className="info">
-                        <span className="info-line">☎ <span className="info-phone">0887 123 456</span></span>
-                        <span className="info-line">&#9993; <span className="info-email">i.ivanov@gmail.com</span></span>
+                        <span className="info-line">☎ {person.phone}</span>
+                        <span className="info-line">&#9993; {person.email}</span>
                     </div>
                 </div>
             </div>
