@@ -4,7 +4,7 @@ class Details extends Component {
     render() {
         let person = this.props.person;
         return (
-            <div id="details">
+            <div id="details" className="maincol">
                 <h1>Details</h1>
                 <div className="content">
                     <div className="info">

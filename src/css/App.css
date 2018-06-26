@@ -10,7 +10,8 @@
   width: 40%;
 }
 
-#details {
+#details,
+.maincol {
   float: left;
   width: 60%;
 }
