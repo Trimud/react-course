@@ -13,17 +13,15 @@ class Book extends Component {
         };
         this.handleClick = this.handleClick.bind(this);
     }
-    handleClick() {
-        // console.log(222);
+    handleClick(index) {
         this.setState({
-            selectedPerson: 2
+            selectedPerson: index
         });
     }
     render() {
-        // console.log(persons[0]);
         return (
             <div id="book">
-                <Contacts persons={persons} handleClick={this.handleClick} />
+                <Contacts persons={persons} handleClick={this.handleClick} selected={this.state.selectedPerson} />
                 <Details person={persons[this.state.selectedPerson]} />
             </div>
         )

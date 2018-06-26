@@ -17,7 +17,7 @@ class Details extends Component {
                         </div>
                     </div>
                     <div className="info">
-                        <span className="info-line">☎ {person.phone}</span>
+                        <span className="info-line">&#9742; {person.phone}</span>
                         <span className="info-line">&#9993; {person.email}</span>
                     </div>
                 </div>
